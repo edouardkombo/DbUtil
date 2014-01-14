@@ -63,6 +63,7 @@ class PdoDriver extends ConceiveAbstraction
                 'Error: Could not make a database link ('.
                 $e->getMessage().').'.'Error Code: ' .$e->getCode().' <br/>'
             );
+            exit();
         }    
     }
     
@@ -167,6 +168,7 @@ class PdoDriver extends ConceiveAbstraction
                 'Error: ' . $e->getMessage() . ' Error Code : ' . 
                 $e->getCode() . ' <br />' . $this->sql
             );
+            exit();
         }
     }    
 
